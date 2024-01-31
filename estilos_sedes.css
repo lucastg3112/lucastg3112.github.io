@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background-color: rgb(194, 0, 0);;
+}
+
+
+.titulo{
+    
+    width: 100%;
+    height: 340px;
+    
+    
+    
+}
+
+.titulo h1{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 36px;
+}
+
+
+
+.contenedor_botones{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.botones{
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    box-shadow: 5px 5px  rgb(150, 0, 0);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.mapa_pc{
+    display: none;
+}
+
+.mapa{
+    
+    
+    display: none;
+    justify-content: center;
+}
+
+.contenedor_mapa{
+   
+    background-color: white;
+    width: 340px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+
+  
+
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    .mapapc{
+        display: none;
+    }
+
+    .contenedor_botones{
+        padding-top: 50px;
+        gap: 15px;
+    }
+
+    .botones h2{
+        padding: 20px;
+    }
+
+    
+
+    .mapa{
+        
+        padding-top: 100px;
+    }
+    .contenedor_mapa{
+       
+        width: 70%;
+        height: 400px;
+    }
+
+    iframe{
+        height: 380px;
+    }
+
+    
+    /* Otros estilos para móviles... */
+  }
+  
+  /* Media query para escritorio (ejemplo: ancho mínimo de 768px) */
+  @media screen and (min-width: 768px) {
+    .contenedor_botones{
+        
+        width: 70%;
+        margin: 0 auto;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .titulo{
+        
+        height: 230px;
+    }
+
+    .botones:hover{
+        background-color: brown;
+        color: white;
+        transition: 0.2s;
+    }
+
+    .mapapc{
+
+       
+        width: 50%;
+        height: 550px;
+        
+        display: none ;
+        margin: 0 auto;
+        
+    }
+
+    .contenedor_mapa_pc{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        
+        
+    }
+
+    
+
+    .map_pc{
+        border-radius: 10px 0px 0px 10px;
+    }
+
+   
+  }
+  
+

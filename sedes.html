@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sedes</title>
+    <link rel="stylesheet" href="estilos_sedes.css">
+</head>
+<body>
+    <main>
+        <section class="titulo">
+            <h1>Nuestras sedes</h1>
+            <div class="contenedor_botones">
+                 <div class="botones" id="div1" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126913.3692474907!2d-75.6216173213682!3d6.258094073242717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f8f2444f0d%3A0xa64aead094a420d4!2sCoopantex%20Sede%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1700463759077!5m2!1ses!2sco">
+                     <h2>Medellín</h2>
+                 </div> 
+                 <div class="botones" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5416923188013!2d-75.5607170206543!3d6.323764799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f0eed39ac9f%3A0x93b7b883fd49d1a2!2sCoopantex!5e0!3m2!1ses!2sco!4v1700464869119!5m2!1ses!2sco">
+                    <h2>Bello</h2>
+                </div>
+                <div class="botones" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126926.33610040124!2d-75.71263199921867!3d6.2044828910337895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683ce97490115%3A0x63c41e3a1cf07380!2sCoopantex!5e0!3m2!1ses!2sco!4v1700464705711!5m2!1ses!2sco">
+                    <h2>Sabaneta</h2>
+                </div>
+                <div class="botones" id="Rionegro" data-src="
+                https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.96012034571!2d-75.57183431043762!3d6.239165674182552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e469f0edee4d03d%3A0x5672c3e2da7bce20!2sFinanciera%20Coopantex!5e0!3m2!1ses!2sco!4v1700502589179!5m2!1ses!2sco">
+                    <h2>Rionegro</h2>
+                </div>
+
+                <div class="botones" id="regreso">
+                    <h2>Regresar</h2>
+                </div>
+
+                <script>
+                    document.getElementById("regreso").addEventListener("click", function() {
+                        window.location.href = "index.html";
+                    });
+                </script>
+
+                
+            </div>
+        </section>
+
+        <section class="mapa">
+            <div class="contenedor_mapa">
+                <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253873.1523492723!2d-75.79580495205272!3d6.161817200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f8f2444f0d%3A0xa64aead094a420d4!2sCoopantex%20Sede%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1700461037907!5m2!1ses!2sco" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>  
+
+        <section class="mapapc">
+            <div class="contenedor_mapa_pc">
+                <div class="map">
+                    <iframe id="mapIframe_pc" class="map_pc"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253873.1523492723!2d-75.79580495205272!3d6.161817200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f8f2444f0d%3A0xa64aead094a420d4!2sCoopantex%20Sede%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1700461037907!5m2!1ses!2sco" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <figure class="imagen_sede">
+                    
+                </figure>
+            </div>
+        </section>
+
+        
+      
+        <script src="scrip_sedes.js"></script>
+        <script src="sedes_pc.js"></script>
+        
+    </main>
+</body>
+</html>
